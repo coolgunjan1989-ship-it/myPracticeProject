@@ -1,0 +1,133 @@
+openapi: 3.0.0
+info:
+  title: My Local JSON Server API
+  description: Swagger UI for practicing with local json-server
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+    description: Local JSON Server
+paths:
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+              examples:
+                MultipleUsers:
+                  summary: Standard list of users
+                  value:
+                    - id: "1"
+                      name: "John Doe"
+                      role: "admin"
+                EmptyList:
+                  summary: Test case for no users found
+                  value: []
+    post:
+      summary: Create a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+            examples:
+              PositiveTestCase:
+                summary: Valid admin user creation
+                value:
+                  name: "Kashvi Sukhija"
+                  email: "kashvi@example.com"
+                  role: "admin"
+                  address:
+                    city: "Delhi"
+                    zip: "110001"
+              MissingRoleTestCase:
+                summary: Negative test - user without role
+                value:
+                  name: "Gunjan Sharma"
+                  email: "gunjan@test.com"
+                  address:
+                    city: "Delhi"
+                    zip: "110002"
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  status:
+                    type: string
+              examples:
+                SuccessResponse:
+                  summary: Response for PositiveTestCase
+                  value:
+                    id: "123"
+                    name: "Kashvi Sukhija"
+                    email: "kashvi@example.com"
+                    status: "success"
+                    createdAt: "2023-11-01T10:00:00Z"
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+              examples:
+                MissingRoleResponse:
+                  summary: Response for MissingRoleTestCase
+                  value:
+                    error: "Bad Request"
+                    message: "Field 'role' is required for this operation"
+                    code: 400
+  /users/{id}:
+    get:
+      summary: Get user by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+        address:
+          type: object
+          properties:
+            city:
+              type: string
+            zip:
+              type: string

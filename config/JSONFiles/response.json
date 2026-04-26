@@ -1,0 +1,76 @@
+{
+  "status": "success",
+  "metadata": {
+    "count": 3,
+    "environment": "testing",
+    "last_updated": "2023-11-01T10:00:00Z"
+  },
+  "users": [
+    {
+      "id": 101,
+      "personal_info": {
+        "first_name": "Kashvi",
+        "last_name": "Sukhija",
+        "email": "kashvi@example.com",
+        "phone": "+91-9876543210"
+      },
+      "address": {
+        "street": "123 Green Avenue",
+        "city": "Delhi",
+        "state": "DL",
+        "zip": "110001",
+        "coordinates": {
+          "lat": "28.6139",
+          "lng": "77.2090"
+        }
+      },
+      "role": "admin",
+      "active": true,
+      "tags": ["automation", "java", "rest-assured"]
+    },
+    {
+      "id": 102,
+      "personal_info": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@testmail.org",
+        "phone": "+1-555-0199"
+      },
+      "address": {
+        "street": "456 Oak Street",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "lat": "40.7128",
+          "lng": "-74.0060"
+        }
+      },
+      "role": "user",
+      "active": false,
+      "tags": ["manual-testing", "documentation"]
+    },
+    {
+      "id": 103,
+      "personal_info": {
+        "first_name": "Gunjan",
+        "last_name": "Sharma",
+        "email": "gunjan.sharma@company.in",
+        "phone": "+91-1122334455"
+      },
+      "address": {
+        "street": "Sector 15, Block B",
+        "city": "Faridabad",
+        "state": "HR",
+        "zip": "121002",
+        "coordinates": {
+          "lat": "28.4089",
+          "lng": "77.3178"
+        }
+      },
+      "role": "editor",
+      "active": true,
+      "tags": ["sql", "oracle", "python"]
+    }
+  ]
+}

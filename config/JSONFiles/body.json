@@ -1,0 +1,9 @@
+{
+  "name": "defg",
+  "email": "defg@gmail.com",
+  "role": "admin",
+  "address": {
+    "city": "New York",
+    "zip": "10001"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "admin",
+      "address": {
+        "city": "New York",
+        "zip": "10001"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Kashvi Sukhija",
+      "email": "kashvi@example.com",
+      "role": "user",
+      "address": {
+        "city": "Delhi",
+        "zip": "110001"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Gunjan Sharma",
+      "email": "gunjan@example.com",
+      "role": "admin",
+      "address": {
+        "city": "Delhi",
+        "zip": "110002"
+      }
+    },
+    {
+      "id": "decb",
+      "name": "SYa",
+      "email": "SYa@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Pune",
+        "zip": "411001"
+      }
+    },
+    {
+      "id": "4871",
+      "name": "P7",
+      "email": "P7@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Pune",
+        "zip": "411001"
+      }
+    },
+    {
+      "id": "23c4",
+      "name": "Q17pPOJY",
+      "email": "Q17pPOJY@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Pune",
+        "zip": "411001"
+      }
+    },
+    {
+      "id": "5f03",
+      "name": "8dSy24",
+      "email": "8dSy24@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Kolkata",
+        "zip": "700001"
+      }
+    },
+    {
+      "id": "9a06",
+      "name": "wUBFwiy",
+      "email": "wUBFwiy@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Delhi",
+        "zip": "110001"
+      }
+    },
+    {
+      "id": "78d6",
+      "name": "9uj8L4vCa2j",
+      "email": "9uj8L4vCa2j@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Delhi",
+        "zip": "110001"
+      }
+    },
+    {
+      "id": "a2ba",
+      "name": "DzWHAb",
+      "email": "DzWHAb@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Bangalore",
+        "zip": "560001"
+      }
+    },
+    {
+      "id": "49c6",
+      "name": "DBx",
+      "email": "DBx@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Delhi",
+        "zip": "110001"
+      }
+    },
+    {
+      "id": "4012",
+      "name": "9XuR6HJHhF",
+      "email": "9XuR6HJHhF@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Hyderabad",
+        "zip": "500001"
+      }
+    },
+    {
+      "id": "0915",
+      "name": "028J",
+      "email": "028J@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Kolkata",
+        "zip": "700001"
+      }
+    },
+    {
+      "id": "adec",
+      "name": "3Auom",
+      "email": "3Auom@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Delhi",
+        "zip": "110001"
+      }
+    },
+    {
+      "id": null,
+      "name": "jtUY6",
+      "email": "jtUY6@gmail.com",
+      "role": "user",
+      "address": {
+        "city": "Hyderabad",
+        "zip": "500001"
+      }
+    },
+    {
+      "id": null,
+      "name": "Xam",
+      "email": "Xam@gmail.com",
+      "role": "admin",
+      "address": {
+        "city": "Kolkata",
+        "zip": "700001"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "101",
+      "title": "Wireless Mouse",
+      "price": 25.5,
+      "category": "Electronics",
+      "stock": 50
+    },
+    {
+      "id": "102",
+      "title": "Mechanical Keyboard",
+      "price": 89.99,
+      "category": "Electronics",
+      "stock": 15
+    },
+    {
+      "id": "103",
+      "title": "Coffee Mug",
+      "price": 12,
+      "category": "Home Decor",
+      "stock": 100
+    }
+  ],
+  "orders": [
+    {
+      "id": "5001",
+      "userId": "1",
+      "productId": "101",
+      "status": "shipped",
+      "date": "2023-10-25"
+    },
+    {
+      "id": "5002",
+      "userId": "2",
+      "productId": "102",
+      "status": "pending",
+      "date": "2023-10-26"
+    }
+  ],
+  "profile": {
+    "company": "Automation Solutions",
+    "status": "active"
+  }
+}

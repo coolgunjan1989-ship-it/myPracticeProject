@@ -1,0 +1,7 @@
+Params:
+  usersRequest: "http://localhost:3000/users"
+  productsRequest: "http://localhost:3000/products"
+  ordersRequest: "http://localhost:3000/orders"
+  profileRequest: "http://localhost:3000/profile"
+  inputExcelPath: "config//ExcelFiles//inputData.xlsx"
+  sheetName: "Response"
