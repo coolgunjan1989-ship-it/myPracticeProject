@@ -1,6 +1,5 @@
 package RestAssured;
 
-import com.google.gson.JsonObject;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.AfterMethod;

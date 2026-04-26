@@ -1,12 +1,9 @@
 package RestAssured;
 
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.lang.reflect.Array;
 import java.util.List;
 
 import static io.restassured.RestAssured.when;
